@@ -1,108 +1,115 @@
 <html>
+
 <head>
 	<title>Student Section</title>
 	<style>
-		a{
+		a {
 			text-decoration: none;
 			font-size: 20px;
 		}
-		input{
+
+		input {
 			width: 250px;
 			height: 30px;
 			padding: 5px;
 		}
-		body{
+
+		body {
 			font-family: Verdana, Geneva, Tahoma, sans-serif;
 			margin: 0;
 		}
-		.btn{
+
+		.btn {
 			background-color: green;
 			border-radius: 5px;
-			width:85px;
+			width: 85px;
 			font-size: 16px;
 			color: rgb(231, 235, 8);
 		}
 	</style>
 </head>
 <script language="javascript">
-	function calculate()
-	{
-		var a,b,c,dis,ml;
-		a=parseInt(document.sform.cf.value);
-		b=parseInt(document.sform.ds.value);
-		c=a-a*b/100;
-		document.sform.nf.value=c;
-		document.sform.stdid.value="STD234RK";
-		
+	function calculate() {
+		var a, b, c, dis, ml;
+		a = parseInt(document.sform.cf.value);
+		b = parseInt(document.sform.ds.value);
+		c = a - a * b / 100;
+		document.sform.nf.value = c;
+		document.sform.stdid.value = "STD234RK";
+
 	}
-	
-            function act()
-            {
-                window.close();
-                window.open("home.htm");
-            }
-    
+
+	function act() {
+		window.close();
+		window.open("index.htm");
+	}
+
 </script>
+
 <body bgcolor="#aaddff">
-<form name="sform">
-<table width="60%" align="center" bgcolor="#bbaaff">
-<tr>
-<td colspan="4">
-<marquee bgcolor="red" behavior="alternate">
-<img src="1st.jpeg" width="100px" height="80px">
-<img src="2nd.jpg" width="100px" height="80px">
-<img src="3rd.jpeg" width="100px" height="80px">
-<img src="4th.jpeg" width="100px" height="80px">
-<img src="5th.jpeg" width="100px" height="80px">
-<img src="1st.jpeg" width="100px" height="80px">
-<img src="2nd.jpg" width="100px" height="80px">
-<img src="3rd.jpeg" width="100px" height="80px">
-<img src="4th.jpeg" width="100px" height="80px">
-<img src="5th.jpeg" width="100px" height="80px">
-</marquee>
-</td>
-</tr>
-<tr>
-	
-<th colspan="4" bgcolor="#DAA"><font color="blue" size="7"><u>STUDENT DETAILS</u></font></th>
-</tr>
-<tr>
-	<td width="15%"></td>
-	<th>Student Name</th>
-	<td colspan="2">::&nbsp;<input type="text" placeholder="Enter FullName" title="Your Name">
-</tr>
-<tr>
-	<td width="15%"></td>
-	<th >Student Id</th>
-	<td colspan="2">::&nbsp;<input type="text" name="stdid" placeholder="Your Id" title="Your ID">
-</tr>
-<tr>
-	<td width="15%"></td>
-	<th>Course Fee</th>
-	<td colspan="2">::&nbsp;<input type="text" placeholder="Fee" title="Course fee" name="cf">
-</tr>
-<tr>
-	<td width="15%"></td>
-	<th>Discount</th>
-	<td colspan="2">::&nbsp;<input type="text" placeholder="%" title="Discount" name="ds" maxlength="2">%
-</tr>
-<tr>	
-	<td width="15%"></td>
-	<th>New Course Fee</th>
-	<td colspan="2">::&nbsp;<input type="text" placeholder="Fee" title="New fee" name="nf" readonly="true">
-</tr>
-<tr bgcolor="#aaccc">
-<td width="15%"></td>
-<td></td>
-<td align="left" >&nbsp;
-	<input type="button" value="Home" name="home" onclick="act();" class="btn">
-	<input type="button" value="Calculate" name="cal" onclick="calculate();" class="btn">
-	<input type="reset" value="Clear" name="reset" class="btn">
+	<form name="sform">
+		<table width="60%" align="center" bgcolor="#bbaaff">
+			<tr>
+				<td colspan="4">
+					<marquee bgcolor="red" behavior="alternate">
+						<img src="1st.jpeg" width="100px" height="80px">
+						<img src="2nd.jpg" width="100px" height="80px">
+						<img src="3rd.jpeg" width="100px" height="80px">
+						<img src="4th.jpeg" width="100px" height="80px">
+						<img src="5th.jpeg" width="100px" height="80px">
+						<img src="1st.jpeg" width="100px" height="80px">
+						<img src="2nd.jpg" width="100px" height="80px">
+						<img src="3rd.jpeg" width="100px" height="80px">
+						<img src="4th.jpeg" width="100px" height="80px">
+						<img src="5th.jpeg" width="100px" height="80px">
+					</marquee>
+				</td>
+			</tr>
+			<tr>
 
-</td>
+				<th colspan="4" bgcolor="#DAA">
+					<font color="blue" size="7"><u>STUDENT DETAILS</u></font>
+				</th>
+			</tr>
+			<tr>
+				<td width="15%"></td>
+				<th>Student Name</th>
+				<td colspan="2">::&nbsp;<input type="text" placeholder="Enter FullName" title="Your Name">
+			</tr>
+			<tr>
+				<td width="15%"></td>
+				<th>Student Id</th>
+				<td colspan="2">::&nbsp;<input type="text" name="stdid" readonly="true" placeholder="Your Id"
+						title="Your ID">
+			</tr>
+			<tr>
+				<td width="15%"></td>
+				<th>Course Fee</th>
+				<td colspan="2">::&nbsp;<input type="text" placeholder="Fee" title="Course fee" name="cf">
+			</tr>
+			<tr>
+				<td width="15%"></td>
+				<th>Discount</th>
+				<td colspan="2">::&nbsp;<input type="text" placeholder="%" title="Discount" name="ds" maxlength="2">%
+			</tr>
+			<tr>
+				<td width="15%"></td>
+				<th>New Course Fee</th>
+				<td colspan="2">::&nbsp;<input type="text" placeholder="Fee" title="New fee" name="nf" readonly="true">
+			</tr>
+			<tr bgcolor="#aaccc">
+				<td width="15%"></td>
+				<td></td>
+				<td align="left">&nbsp;
+					<input type="button" value="Home" name="home" onclick="act();" class="btn">
+					<input type="button" value="Calculate" name="cal" onclick="calculate();" class="btn">
+					<input type="reset" value="Clear" name="reset" class="btn">
 
-</tr>
-</table>
-</form>
-</body>	
+				</td>
+
+			</tr>
+		</table>
+	</form>
+</body>
+
 </html>

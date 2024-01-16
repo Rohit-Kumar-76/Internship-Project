@@ -1,24 +1,26 @@
 <html>
+
 <head>
     <title>Barbar shop</title>
     <style>
-        body{
+        body {
             margin: 0;
-            font-family:Verdana, Geneva, Tahoma, sans-serif ;
-            background-image: url(bg2.jpg) ;
-            color: red ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-image: url(bg2.jpg);
+            color: red;
         }
-      
-	
-		.btn{
-			background-color:#66E5EA;
-			border-radius: 5px;
-			width:70px;
-			font-size: 16px;
-			color: rgb(235, 8, 8);
-		}
-        .bg{
-            background-color:#85C1E9 ;
+
+
+        .btn {
+            background-color: #66E5EA;
+            border-radius: 5px;
+            width: 70px;
+            font-size: 16px;
+            color: rgb(235, 8, 8);
+        }
+
+        .bg {
+            background-color: #85C1E9;
             padding: 7px;
         }
     </style>
@@ -26,138 +28,168 @@
 
 <body bgcolor="red">
     <script language="javascript">
-        function act()
-        {
+        function act() {
             window.close();
-            window.open("home.htm");
+            window.open("index.htm");
         }
-    
-    function bbfun()
-    {
-        var tt=0,result=0;
-       
-        if(document.bbform.check4.checked==true)
-        {
-            
-            tt = tt + 500;
-        }
-        if(document.bbform.check5.checked==true)
-        {
-            tt = tt + 250;
-        }
-        if(document.bbform.check6.checked==true)
-        {
-            tt = tt + 150;
-        }
-        if(document.bbform.check7.checked==true)
-        {
-            tt = tt + 100;
-        }
-        document.bbform.tot.value=tt;
 
-        
-        if(document.bbform.radio1[0].checked==true)
-        {
-            result=tt-tt*(20/100);
-            document.bbform.tot.value=result;
+        function bbfun() {
+            var tt = 0, result = 0;
+
+            if (document.bbform.check4.checked == true) {
+
+                tt = tt + 500;
+            }
+            if (document.bbform.check5.checked == true) {
+                tt = tt + 250;
+            }
+            if (document.bbform.check6.checked == true) {
+                tt = tt + 150;
+            }
+            if (document.bbform.check7.checked == true) {
+                tt = tt + 100;
+            }
+            document.bbform.tot.value = tt;
+
+
+            if (document.bbform.radio1[0].checked == true) {
+                result = tt - tt * (20 / 100);
+                document.bbform.tot.value = result;
+            }
+            if (document.bbform.radio1[1].checked == true) {
+                result = tt - tt * (15 / 100);
+                document.bbform.tot.value = result;
+            }
+            if (document.bbform.radio1[2].checked == true) {
+                result = tt - tt * (10 / 100);
+                document.bbform.tot.value = result;
+            }
         }
-        if(document.bbform.radio1[1].checked==true)
-        {
-            result=tt-tt*(15/100);
-            document.bbform.tot.value=result;
-        }
-        if(document.bbform.radio1[2].checked==true)
-        {
-            result=tt-tt*(10/100);
-            document.bbform.tot.value=result;
-        }
-    }
-       
-    
+
+
     </script>
     <img src="barbar1.png" width="100%" height="70px">
     <form name="bbform">
-    <table width="90%" style="border-collapse: collapse;">
-        <tr height="30px">
-            <td colspan="10" align="center"></td>
-        </tr>
-        <tr height="30px">
-            <td rowspan="12" width="15%">
-                <img src="hair1.png" alt=""><br>
-                <img src="hairr.png" alt="">
-                
-            </td>
-            <td width="170px" class="bg"><font color="white" size="4">Customer Name ::</font></td>
-            <td colspan="3" width="200px" class="bg"><input type="text"  style="width:100%" placeholder="Customer Name" title="Customer Name"></td>
-            <td rowspan="12" width="50px"></td>
-        
-            <td colspan="4" rowspan="12" align="center" width="350px" height="300px">
-                <marquee behavior="scroll">
-                    <img src="hair-gr.jpg" alt="img"  height="100%">
-                    <img src="h-1.jpeg" alt="img"  height="100%">
-                    <img src="h-2.jpg" alt="img"  height="100%">
-                    <img src="h-3.jpeg" alt="img"  height="100%">
-                    <img src="h-4.jpeg" alt="img"  height="100%">
-                </marquee>
-            </td>
-        </tr>
-        <tr height="30px">
-            <td colspan="4" class="bg"><font color="white" size="4" >Customer Type ::</font></td>
-        </tr>
-        <tr height="30px">
-            <td class="bg"></td >
-            <td width="90px" align="left" class="bg"><input type="checkbox" name="check1" ><font color="white" size="4">Special</font></td>
-            <td width="130px" align="center" bgcolor="navyblue"class="bg"><input type="checkbox" name="check2" ><font color="white" size="4">Common</font></td>
-            <td width="100px" align="right" class="bg"><input type="checkbox" name="check3" ><font color="white" size="4">New</font></td>
-        </tr>
-        <tr height="30px">
-            <td colspan="4" class="bg"><font color="white" size="4">Charge Details ::</font></td>
-        </tr>
-        <tr height="30px">
-            
-            <td class="bg" colspan="2"></td>
-            <td class="bg"><input type="checkbox" name="check4" value="hc" onclick="bbfun();"><font color="white" size="4" >Hair Cutting</font> </td>
-          
-            <td width="50px" align="right" class="bg"><font color="white" size="4">(500 Rs)</font></td>
-            
-        </tr>
-        <tr height="30px">
-            <td colspan="2" class="bg"></td>
-            <td class="bg"><input type="checkbox" name="check5" value="sh" onclick="bbfun();"><font color="white" size="4" >Shaving</font></td>
-            <td align="right" class="bg"><font color="white" size="4">(250 Rs)</font></td>
-        </tr>
-        <tr height="30px">
-            <td colspan="2" class="bg"></td>
-            <td class="bg"><input type="checkbox" name="check6" value="ms" onclick="bbfun();"><font color="white" size="4" >Mashage</font></td>
-            <td align="right" class="bg"><font color="white" size="4">(150 Rs)</font></td>
-        </tr>
-        <tr height="30px">
-            <td colspan="2" class="bg"></td>
-            <td class="bg"><input type="checkbox" name="check7" value="hs" onclick="bbfun();"><font color="white" size="4" >Hair Set</font></td>
-            <td align="right" class="bg"><font color="white" size="4">(100 Rs)</font></td>
-        </tr>
-        <tr height="30px">
-            <td colspan="4" class="bg"><font color="white" size="4">Discount Details ::</font></td>
+        <table width="90%" style="border-collapse: collapse;">
+            <tr height="30px">
+                <td colspan="10" align="center"></td>
+            </tr>
+            <tr height="30px">
+                <td rowspan="12" width="15%">
+                    <img src="hair1.png" alt=""><br>
+                    <img src="hairr.png" alt="">
 
-        </tr>
-        <tr height="30px">
-            <td colspan="4" class="bg">
-                <input type="radio" name="radio1" onclick="bbfun();">&nbsp;<font color="white" size="4">20% Discount&nbsp;  </font>
-                <input type="radio" name="radio1" onclick="bbfun();">&nbsp;<font color="white" size="4">15% Discount&nbsp;  </font> 
-                <input type="radio" name="radio1" onclick="bbfun();">&nbsp;<font color="white" size="4">10% Discount&nbsp;  </font></td>
-        </tr>
-        <tr height="30px">
-            <td class="bg"><font color="white" size="4">Total Price In Rs ::</font></td>
-            <td colspan="3" width="200px" class="bg"><input type="textarea" name="tot" size=43 readonly="true" placeholder="Your Total Price will Display Here" title="Total Amount"> </td>
-        </tr>
-        <tr >
-            <td colspan="4" align="center" height="20px" class="bg">
-                <input type="button" class="btn" onclick="window.close();" value="Exit" >&nbsp;
-                <input type="reset" class="btn"  value="Reset">&nbsp;
-                <input type="reset" class="btn"  value="Home" onclick="act();" >&nbsp;
-            </td>
-        </tr>
-    </table>
-</form>
+                </td>
+                <td width="170px" class="bg">
+                    <font color="white" size="4">Customer Name ::</font>
+                </td>
+                <td colspan="3" width="200px" class="bg"><input type="text" style="width:100%"
+                        placeholder="Customer Name" title="Customer Name"></td>
+                <td rowspan="12" width="50px"></td>
+
+                <td colspan="4" rowspan="12" align="center" width="350px" height="300px">
+                    <marquee behavior="scroll">
+                        <img src="hair-gr.jpg" alt="img" height="100%">
+                        <img src="h-1.jpeg" alt="img" height="100%">
+                        <img src="h-2.jpg" alt="img" height="100%">
+                        <img src="h-3.jpeg" alt="img" height="100%">
+                        <img src="h-4.jpeg" alt="img" height="100%">
+                    </marquee>
+                </td>
+            </tr>
+            <tr height="30px">
+                <td colspan="4" class="bg">
+                    <font color="white" size="4">Customer Type ::</font>
+                </td>
+            </tr>
+            <tr height="30px">
+                <td class="bg"></td>
+                <td width="90px" align="left" class="bg"><input type="checkbox" name="check1">
+                    <font color="white" size="4">Special</font>
+                </td>
+                <td width="130px" align="center" bgcolor="navyblue" class="bg"><input type="checkbox" name="check2">
+                    <font color="white" size="4">Common</font>
+                </td>
+                <td width="100px" align="right" class="bg"><input type="checkbox" name="check3">
+                    <font color="white" size="4">New</font>
+                </td>
+            </tr>
+            <tr height="30px">
+                <td colspan="4" class="bg">
+                    <font color="white" size="4">Charge Details ::</font>
+                </td>
+            </tr>
+            <tr height="30px">
+
+                <td class="bg" colspan="2"></td>
+                <td class="bg"><input type="checkbox" name="check4" value="hc" onclick="bbfun();">
+                    <font color="white" size="4">Hair Cutting</font>
+                </td>
+
+                <td width="50px" align="right" class="bg">
+                    <font color="white" size="4">(500 Rs)</font>
+                </td>
+
+            </tr>
+            <tr height="30px">
+                <td colspan="2" class="bg"></td>
+                <td class="bg"><input type="checkbox" name="check5" value="sh" onclick="bbfun();">
+                    <font color="white" size="4">Shaving</font>
+                </td>
+                <td align="right" class="bg">
+                    <font color="white" size="4">(250 Rs)</font>
+                </td>
+            </tr>
+            <tr height="30px">
+                <td colspan="2" class="bg"></td>
+                <td class="bg"><input type="checkbox" name="check6" value="ms" onclick="bbfun();">
+                    <font color="white" size="4">Mashage</font>
+                </td>
+                <td align="right" class="bg">
+                    <font color="white" size="4">(150 Rs)</font>
+                </td>
+            </tr>
+            <tr height="30px">
+                <td colspan="2" class="bg"></td>
+                <td class="bg"><input type="checkbox" name="check7" value="hs" onclick="bbfun();">
+                    <font color="white" size="4">Hair Set</font>
+                </td>
+                <td align="right" class="bg">
+                    <font color="white" size="4">(100 Rs)</font>
+                </td>
+            </tr>
+            <tr height="30px">
+                <td colspan="4" class="bg">
+                    <font color="white" size="4">Discount Details ::</font>
+                </td>
+
+            </tr>
+            <tr height="30px">
+                <td colspan="4" class="bg">
+                    <input type="radio" name="radio1" onclick="bbfun();">&nbsp;<font color="white" size="4">20%
+                        Discount&nbsp; </font>
+                    <input type="radio" name="radio1" onclick="bbfun();">&nbsp;<font color="white" size="4">15%
+                        Discount&nbsp; </font>
+                    <input type="radio" name="radio1" onclick="bbfun();">&nbsp;<font color="white" size="4">10%
+                        Discount&nbsp; </font>
+                </td>
+            </tr>
+            <tr height="30px">
+                <td class="bg">
+                    <font color="white" size="4">Total Price In Rs ::</font>
+                </td>
+                <td colspan="3" width="200px" class="bg"><input type="textarea" name="tot" size=43 readonly="true"
+                        placeholder="Your Total Price will Display Here" title="Total Amount"> </td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center" height="20px" class="bg">
+                    <input type="button" class="btn" onclick="window.close();" value="Exit">&nbsp;
+                    <input type="reset" class="btn" value="Reset">&nbsp;
+                    <input type="reset" class="btn" value="Home" onclick="act();">&nbsp;
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
+
 </html>

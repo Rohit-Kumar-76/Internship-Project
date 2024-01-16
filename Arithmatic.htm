@@ -1,90 +1,96 @@
 <html>
-<head>
-<title>Arithmatic calculation</title>
-</head>
-<body bgcolor="skyblue">
-<script language="javascript">
-	function ad()
-{
-	var a,b,c;
-	a=parseInt(document.Arith.fno.value);
-	b=parseInt(document.Arith.sno.value);
-	c = a+b;
-	document.Arith.result.value=c;
-	
-}
-function sb()
-{
-	var a,b,c;
-	a=parseInt(document.Arith.fno.value);
-	b=parseInt(document.Arith.sno.value);
-	c = a-b;
-	document.Arith.result.value=c;
-	
-}
-function ml()
-{
-	var a,b,c;
-	a=parseInt(document.Arith.fno.value);
-	b=parseInt(document.Arith.sno.value);
-	c = a*b;
-	document.Arith.result.value=c;
-	
-}
-function dv()
-{
-	var a,b,c;
-	a=parseInt(document.Arith.fno.value);
-	b=parseInt(document.Arith.sno.value);
-	c = a/b;
-	document.Arith.result.value=c;
-		
-}
-function act()
-	{
-		window.close();
-		window,open("home.htm");
-	}
 
-</script>
-<br>
-	<form name="Arith"  align="center">
-	<table width="30%" align="center"  bgcolor="navyblue" style="border:3px solid blue">
-		<tr>
-			<th style="height:40px;font-size:40px;" bgcolor="red"><u>ARITHMATIC CAL</u></th>
-		</tr>
-		<tr align="center">
-		
-			<td ><input type="text" name="fno" placeholder="Enter A number" title="Enter First Number" maxlength="5" style="width: 80%;height:40px;font-size: 30px;"/></td>
-			
-		</tr>
-		<tr align="center">
-			
-			<td >
-				<input type="text" name="sno" placeholder="Enter Second number" title="Enter Second Number" maxlength="5" style="width: 80%;height:40px;font-size: 30px;"/>
-			</td>
-			
-		</tr>
-		<tr align="center">
-			<td >
-				<input type="text" name="result" placeholder="Result" title="Result" readonly="true" style="width: 80%;height:40px;font-size: 30px;"/>
-			</td>
-			
-		</tr>
-		<tr align="center">
-		
-			<td  align="center">
-				<input type="button" value="Add" name="AD" onclick="ad();" style="width:60px;height:30px;font-size:20px;"> 
-				<input type="button" value="Sub" name="SB" onclick="sb();" style="width:60px;height:30px;font-size:20px;">
-				<input type="button" value="Mul" name="ML" onclick="ml();" style="width:60px;height:30px;font-size:20px;">  
-				<input type="button" value="Div" name="DV" onclick="dv();" style="width:60px;height:30px;font-size:20px;">  
-				<input type="reset" value="Reset" style="width:60px;height:30px;font-size:18px;"/>
-			</td>
-		</tr>
-		<tr>
-			<td align="center" width="50%"><input type="button" value="Home" onclick="act();" style="width:70px;height:30px;font-size:20px;"></td>
-		</tr>
-	</table>
+<head>
+	<title>Arithmatic calculation</title>
+</head>
+
+<body bgcolor="skyblue">
+	<script language="javascript">
+		function ad() {
+			var a, b, c;
+			a = parseInt(document.Arith.fno.value);
+			b = parseInt(document.Arith.sno.value);
+			c = a + b;
+			document.Arith.result.value = c;
+
+		}
+		function sb() {
+			var a, b, c;
+			a = parseInt(document.Arith.fno.value);
+			b = parseInt(document.Arith.sno.value);
+			c = a - b;
+			document.Arith.result.value = c;
+
+		}
+		function ml() {
+			var a, b, c;
+			a = parseInt(document.Arith.fno.value);
+			b = parseInt(document.Arith.sno.value);
+			c = a * b;
+			document.Arith.result.value = c;
+
+		}
+		function dv() {
+			var a, b, c;
+			a = parseInt(document.Arith.fno.value);
+			b = parseInt(document.Arith.sno.value);
+			c = a / b;
+			document.Arith.result.value = c;
+
+		}
+		function act() {
+			window.close();
+			window, open("index.htm");
+		}
+
+	</script>
+	<br>
+	<form name="Arith" align="center">
+		<table width="30%" align="center" bgcolor="navyblue" style="border:3px solid blue">
+			<tr>
+				<th style="height:40px;font-size:40px;" bgcolor="red"><u>ARITHMATIC CAL</u></th>
+			</tr>
+			<tr align="center">
+
+				<td><input type="text" name="fno" placeholder="Enter A number" title="Enter First Number" maxlength="5"
+						style="width: 80%;height:40px;font-size: 30px;" /></td>
+
+			</tr>
+			<tr align="center">
+
+				<td>
+					<input type="text" name="sno" placeholder="Enter Second number" title="Enter Second Number"
+						maxlength="5" style="width: 80%;height:40px;font-size: 30px;" />
+				</td>
+
+			</tr>
+			<tr align="center">
+				<td>
+					<input type="text" name="result" placeholder="Result" title="Result" readonly="true"
+						style="width: 80%;height:40px;font-size: 30px;" />
+				</td>
+
+			</tr>
+			<tr align="center">
+
+				<td align="center">
+					<input type="button" value="Add" name="AD" onclick="ad();"
+						style="width:60px;height:30px;font-size:20px;">
+					<input type="button" value="Sub" name="SB" onclick="sb();"
+						style="width:60px;height:30px;font-size:20px;">
+					<input type="button" value="Mul" name="ML" onclick="ml();"
+						style="width:60px;height:30px;font-size:20px;">
+					<input type="button" value="Div" name="DV" onclick="dv();"
+						style="width:60px;height:30px;font-size:20px;">
+					<input type="reset" value="Reset" style="width:60px;height:30px;font-size:18px;" />
+				</td>
+			</tr>
+			<tr>
+				<td align="center" width="50%"><input type="button" value="Home" onclick="act();"
+						style="width:70px;height:30px;font-size:20px;"></td>
+			</tr>
+		</table>
 	</form>
 </body>
+
 </html>

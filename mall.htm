@@ -1,116 +1,114 @@
 <html>
-    <head>
-        <title>Shoping Mall Billing</title>
-        <style>
-            body{
-                font-family:Verdana, Geneva, Tahoma, sans-serif;
-                margin: 20px;
-	
+
+<head>
+    <title>Shoping Mall Billing</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 20px;
+
+        }
+
+        select {
+            font-size: 20px;
+        }
+
+        input {
+            font-size: 20px;
+        }
+
+        table tr td {
+            font-size: 20px;
+        }
+
+        .btn {
+            background-color: green;
+            border-radius: 5px;
+            width: 70px;
+            font-size: 16px;
+            color: rgb(231, 235, 8);
+        }
+    </style>
+</head>
+
+<body bgcolor="navyblue">
+    <script lang="javascript">
+        function sel() {
+            if (document.mallform.select1.selectedIndex == 1) {
+                document.mallform.pid.value = "Sumsung-Ref-2021";
+                document.mallform.pprice.value = 12000;
+                document.mallform.disc.value = "10";
+                document.mallform.discrs.value = 12000 * 10 / 100;
+                document.mallform.namount.value = 12000 - 12000 * 10 / 100;
+
             }
-		select{
-			font-size:20px;
-			}
-		
-	    input{
-		font-size:20px;
-		}
-           table  tr  td{
-				font-size:20px;
-				}
-                .btn{
-			background-color: green;
-			border-radius: 5px;
-			width:70px;
-			font-size: 16px;
-			color: rgb(231, 235, 8);
-		}
-        </style>
-    </head>
-    <body bgcolor="navyblue">
-        <script lang="javascript">
-            function sel()
-            {
-                if(document.mallform.select1.selectedIndex==1)
-                {
-                    document.mallform.pid.value="Sumsung-Ref-2021";
-                    document.mallform.pprice.value=12000;
-                    document.mallform.disc.value="10";
-                    document.mallform.discrs.value=12000*10/100;
-                    document.mallform.namount.value=12000-12000*10/100;
-                    
-                }
-                if(document.mallform.select1.selectedIndex==2)
-                {
-                    document.mallform.pid.value="Canva-Ac-2022";
-                    document.mallform.pprice.value=16000;
-                    document.mallform.disc.value="12";
-                    document.mallform.discrs.value=16000*12/100;
-                    document.mallform.namount.value=16000-16000*12/100;
-                    
-                }
-                if(document.mallform.select1.selectedIndex==3)
-                {
-                    document.mallform.pid.value="Sumsung-Cooler-2020";
-                    document.mallform.pprice.value=10000;
-                    document.mallform.disc.value="5";
-                    document.mallform.discrs.value=10000*5/100;
-                    document.mallform.namount.value=10000-10000*5/100;
-                    
-                }
-                if(document.mallform.select1.selectedIndex==4)
-                {
-                    document.mallform.pid.value="LG-Tv-2019";
-                    document.mallform.pprice.value=14000;
-                    document.mallform.disc.value="6";
-                    document.mallform.discrs.value=14000*6/100;
-                    document.mallform.namount.value=14000-14000*6/100;
-                    
-                }
-                if(document.mallform.select1.selectedIndex==5)
-                {
-                    document.mallform.pid.value="Sumsung-WM-2022";
-                    document.mallform.pprice.value=15000;
-                    document.mallform.disc.value="8";
-                    document.mallform.discrs.value=15000*8/100;
-                    document.mallform.namount.value=15000-15000*8/100;
-                    
-                }
-                if(document.mallform.select1.selectedIndex==6)
-                {
-                    document.mallform.pid.value="Gl-WC-2021";
-                    document.mallform.pprice.value=8000;
-                    document.mallform.disc.value="2";
-                    document.mallform.discrs.value=8000*2/100;
-                    document.mallform.namount.value=8000-8000*2/100;
-                    
-                }
-                if(document.mallform.select1.selectedIndex==7)
-                {
-                    document.mallform.pid.value="Gl-WH-2021";
-                    document.mallform.pprice.value=6000;
-                    document.mallform.disc.value="2";
-                    document.mallform.discrs.value=6000*2/100;
-                    document.mallform.namount.value=6000-6000*2/100;
-                    
-                }
+            if (document.mallform.select1.selectedIndex == 2) {
+                document.mallform.pid.value = "Canva-Ac-2022";
+                document.mallform.pprice.value = 16000;
+                document.mallform.disc.value = "12";
+                document.mallform.discrs.value = 16000 * 12 / 100;
+                document.mallform.namount.value = 16000 - 16000 * 12 / 100;
+
             }
-            function act()
-            {
-                window.close();
-                window.open("home.htm");
+            if (document.mallform.select1.selectedIndex == 3) {
+                document.mallform.pid.value = "Sumsung-Cooler-2020";
+                document.mallform.pprice.value = 10000;
+                document.mallform.disc.value = "5";
+                document.mallform.discrs.value = 10000 * 5 / 100;
+                document.mallform.namount.value = 10000 - 10000 * 5 / 100;
+
             }
-        </script>
-        <form name="mallform">
-        <table  width="50%" align="center" style="margin-top: 20px;" bgcolor="#abecdf">
+            if (document.mallform.select1.selectedIndex == 4) {
+                document.mallform.pid.value = "LG-Tv-2019";
+                document.mallform.pprice.value = 14000;
+                document.mallform.disc.value = "6";
+                document.mallform.discrs.value = 14000 * 6 / 100;
+                document.mallform.namount.value = 14000 - 14000 * 6 / 100;
+
+            }
+            if (document.mallform.select1.selectedIndex == 5) {
+                document.mallform.pid.value = "Sumsung-WM-2022";
+                document.mallform.pprice.value = 15000;
+                document.mallform.disc.value = "8";
+                document.mallform.discrs.value = 15000 * 8 / 100;
+                document.mallform.namount.value = 15000 - 15000 * 8 / 100;
+
+            }
+            if (document.mallform.select1.selectedIndex == 6) {
+                document.mallform.pid.value = "Gl-WC-2021";
+                document.mallform.pprice.value = 8000;
+                document.mallform.disc.value = "2";
+                document.mallform.discrs.value = 8000 * 2 / 100;
+                document.mallform.namount.value = 8000 - 8000 * 2 / 100;
+
+            }
+            if (document.mallform.select1.selectedIndex == 7) {
+                document.mallform.pid.value = "Gl-WH-2021";
+                document.mallform.pprice.value = 6000;
+                document.mallform.disc.value = "2";
+                document.mallform.discrs.value = 6000 * 2 / 100;
+                document.mallform.namount.value = 6000 - 6000 * 2 / 100;
+
+            }
+        }
+        function act() {
+            window.close();
+            window.open("index.htm");
+        }
+    </script>
+    <form name="mallform">
+        <table width="50%" align="center" style="margin-top: 20px;" bgcolor="#abecdf">
             <tr>
-                <td align="center" colspan="3" bgcolor="green" style="border-bottom:5px solid red"><font color="yellow" size="7">Rohit SuperMarket Pvt. Ltd.</font> <br></td>
+                <td align="center" colspan="3" bgcolor="green" style="border-bottom:5px solid red">
+                    <font color="yellow" size="7">Rohit SuperMarket Pvt. Ltd.</font> <br>
+                </td>
             </tr>
-           
+
             <tr height="40px">
                 <td width="90px"></td>
-                <td align="left" >Product Name</td>
-                <td align="left" >::
-                    <select name="select1"  style="width: 290px;height: 30px;" onchange="sel();">
+                <td align="left">Product Name</td>
+                <td align="left">::
+                    <select name="select1" style="width: 290px;height: 30px;" onchange="sel();">
                         <option style="text-align: center;"> Select One product </option>
                         <option style="text-align: center;">Refrigratar</option>
                         <option style="text-align: center;">Air Conditionar</option>
@@ -125,55 +123,64 @@
             <tr height="40px">
                 <td></td>
                 <td align="left" width="25%">Product ID</td>
-                <td  >::<input type="text" name="pid" style="width: 300px;height: 30px;"></td>
+                <td>::<input type="text" name="pid" style="width: 300px;height: 30px;"></td>
             </tr>
             <tr height="40px">
                 <td></td>
-                <td align="left" >Product Price</td>
-                <td align="left" >::<input type="text" name="pprice" style="width: 300px;height: 30px;" readonly="true">Rs</td>
+                <td align="left">Product Price</td>
+                <td align="left">::<input type="text" name="pprice" style="width: 300px;height: 30px;"
+                        readonly="true">Rs</td>
             </tr>
             <tr height="40px">
                 <td></td>
                 <td align="left" width="25%">Discount</td>
-                <td align="left" >::<input type="text" name="disc" style="width: 300px;height: 30px;" readonly="true">%</td>
+                <td align="left">::<input type="text" name="disc" style="width: 300px;height: 30px;" readonly="true">%
+                </td>
             </tr>
             <tr height="40px">
                 <td></td>
-                <td align="left" >Discount Rs</td>
-                <td align="left" >::<input type="text" name="discrs" style="width: 300px;height: 30px;" readonly="true">Rs</td>
+                <td align="left">Discount Rs</td>
+                <td align="left">::<input type="text" name="discrs" style="width: 300px;height: 30px;"
+                        readonly="true">Rs</td>
             </tr>
             <tr height="40px">
                 <td></td>
-                <td align="left" >Net Amount</td>
-                <td align="left" >::<input type="text" name="namount" style="width: 300px;height: 30px;" readonly="true">Rs</td>
+                <td align="left">Net Amount</td>
+                <td align="left">::<input type="text" name="namount" style="width: 300px;height: 30px;"
+                        readonly="true">Rs</td>
             </tr>
             <tr height="30px">
-                <td  colspan="2"></td>
-		<td  align="left">&nbsp;&nbsp;
-			<input type="button" value="Exit" onclick="window.close();" class="btn">&nbsp;
-			<input type="button" value="Home" onclick="act();" class="btn">&nbsp;
-			<input type="button" value="Reset" onclick="reset();" class="btn">
-			
-		</td>
-		
+                <td colspan="2"></td>
+                <td align="left">&nbsp;&nbsp;
+                    <input type="button" value="Exit" onclick="window.close();" class="btn">&nbsp;
+                    <input type="button" value="Home" onclick="act();" class="btn">&nbsp;
+                    <input type="button" value="Reset" onclick="reset();" class="btn">
+
+                </td>
+
             </tr>
-            <tr height="30px"><td colspan="3"></td></tr>
-            <tr height="30px"><td colspan="3"></td></tr>
+            <tr height="30px">
+                <td colspan="3"></td>
+            </tr>
+            <tr height="30px">
+                <td colspan="3"></td>
+            </tr>
             <tr>
                 <td colspan="3">
-                    <marquee behavior="alternate" >
+                    <marquee behavior="alternate">
                         <img src="ref.jpeg" width="200px" height="150px">
                         <img src="tv.jpeg" width="200px" height="150px">
                         <img src="ac.jpeg" width="200px" height="150px">
                         <img src="wm.jpeg" width="200px" height="150px">
                         <img src="wc.jpeg" width="200px" height="150px">
                         <img src="wh.jpeg" width="200px" height="150px">
-                        
+
                     </marquee>
                 </td>
             </tr>
         </table>
-        
+
     </form>
-    </body>
+</body>
+
 </html>
