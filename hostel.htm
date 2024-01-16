@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Hostel Fee</title>
+<style>
+	body{
+		margin: 0;
+		
+	}
+	.fs{
+		font-family:   Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 20px;
+		font-weight: bold;
+		
+	}
+	.in{
+		height: 30px;
+		width: 80%;
+		
+	}
+</style>
+</head>
+
+<body bgcolor="navyblue">
+<script language="javascript">
+function cheaked()
+{
+var num=parseInt(document.host.rs.value);
+var str = 0;
+ str = str + num;
+if(document.host.cheak1.checked==true)
+{
+	str = str + 1500;
+}
+if(document.host.cheak2.checked==true)
+{
+	str = str + 500;
+}
+if(document.host.cheak3.checked==true)
+{
+	str =str + 300;
+}
+if(document.host.cheak4.checked==true)
+{
+	str = str + 200;
+}
+if(document.host.cheak5.checked==true)
+{
+	str = str + 100;
+}
+
+document.host.Af.value=str;
+}
+function act()
+{
+window.close();
+window.open("home.htm");
+}
+</script>
+<br><br>
+<form name="host">
+<table width="50%"  align="center" height="10px" bgcolor="lightblue" style="border:3px solid blue">
+<tr>
+<th colspan="4" align="center" bgcolor="Red">
+<font size="7" color="Yellow"><u>Hostel Services </u></font>
+</th>
+</tr>
+<tr height="10px">
+<td width="20%"></td>
+<td class="fs">Student Id</td>
+<td colspan="2"><input type="text" class="in"></td>
+</tr>
+<tr height="10px">
+<td></td>
+<td class="fs">Student Name</td>
+<td colspan="2"><input type="text" class="in"></td>
+</tr>
+<tr height="10px">
+<td></td>
+<td class="fs">Room Basic Fare</td>
+<td colspan="2"><input type="text" name="rs" class="in"></td>
+</tr>
+<tr height="10px">
+<th colspan="4"  bgcolor="red" class="fs"><font size="5" color="yellow">Additional Services</font></th>
+</tr>
+<tr height="10px">
+<td></td>
+<td></td>
+<td class="fs"><input type="checkbox" name="cheak1" value="ac" onclick="cheaked();" >AC Service (1500-/)</td>
+</tr>
+<tr height="10px">
+<td></td>
+<td></td>
+<td class="fs"><input type="checkbox" name="cheak2" value="Park" onclick="cheaked();" >Parking Service(500-/)</td>
+</tr>
+<tr height="10px">
+<td></td>
+<td></td>
+<td class="fs"><input type="checkbox" name="cheak3" value="Lib" onclick="cheaked();" >Library Service(300-/)</td>
+</tr>
+<tr height="10px">
+<td></td>
+<td></td>
+<td class="fs"><input type="checkbox" name="cheak4" value="mw" onclick="cheaked();">Washing Service(200-/)</td>
+</tr>
+<tr height="10px">
+<td></td>
+<td></td>
+<td class="fs"><input type="checkbox" name="cheak5" value="mw" onclick="cheaked();" >Other Service(100)-/</td>
+</tr>
+<tr height="10px">
+<td colspan="4" align="center" class="fs">Total Net Amount :
+<input type="textarea" name="Af" size=30 readonly="true" ></input></td>
+</tr>
+<tr><td colspan="4" align="center"><input type="button" value="Home" onclick="act();" 
+style=" width: 70px;
+    
+    font-size: 20px;
+    background-color: #dc1417;
+    color:rgb(228, 232, 20);
+    border-radius: 7px;">
+	</td></tr>
+</table>
+</form>
+</body>
+</html>

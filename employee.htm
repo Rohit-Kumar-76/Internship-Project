@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Employee Details</title>
+       
+        <style>
+            .fc{
+                color: white;
+                font-size: 25px;
+            }
+            input{
+                height: 25px;
+            }
+            .btn{
+                width: 70px;
+                height: 25px;
+                background-color: #cd0d13;
+                font-size: 18px;
+                border-radius: 8px;
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    
+    <body background="bac.jpeg" bgcolor="orange" style="border:1px solid black">
+       
+        <form name="emform">
+        <table width="45%" align="center" style="border-bottom:2px solid black;">
+            <tr>
+                <td colspan="4" align="center" bgcolor="red"><font size="7" color="yellow">EMPLOYEE DETAILS</font></td>
+            </tr>
+            <tr>
+                <td class="fc">Employee Id</td>
+                <td class="fc">:: <input type="text" name="id" ></td>
+                <td rowspan="3" colspan="2" width="200px"><img src="employee.jpeg" width="100%" height="220px"></td>
+            </tr>
+            
+            <tr>
+                <td class="fc">Employee Name</td>
+                <td class="fc">
+                    :: <input type="text" >
+                </td>
+            </tr>
+            <tr>
+                <td class="fc">Employee Salery</td>
+                <td class="fc">:: <input type="text" name="sal" ></td>
+            </tr>
+            <tr height="20px">
+                <td colspan="4"></td>
+            </tr>
+            <tr height="35px">
+                <td class="fc">TA</td>
+                <td class="fc">:: <input type="text" name="TA" readonly="true"></td>
+                <td></td>
+                <td class="fc" width="100px" align="center"><input type="text" name="TAP" style="width: 50px;" maxlength="2">%</td>
+            </tr>
+            <tr height="35px">
+                <td class="fc">DA</td>
+                <td class="fc">:: <input type="text" name="DA" readonly="true"></td>
+                <td></td>
+                <td class="fc" width="100px" align="center"><input type="text" name="DAP" style="width: 50px;" maxlength="2">%</td>
+            </tr>
+            <tr height="35px">
+                <td class="fc">HRA</td>
+                <td class="fc">:: <input type="text" name="HRA" readonly="true"></td>
+                <td></td>
+                <td class="fc" width="100px" align="center"><input type="text" name="HRAP" style="width: 50px;" maxlength="2">%</td>
+            </tr>
+            <tr>
+                <td class="fc">Gross Salery</td>
+                <td colspan="3" class="fc">:: <input type="text" name="GS" readonly="true"></td>
+            </tr>
+            <tr height="35px">
+                <td class="fc">Tax</td>
+                <td class="fc">:: <input type="text" name="tax" readonly="true"></td>
+                <td></td>
+                <td class="fc" width="100px" align="center"><input type="text" name="tax1" style="width: 50px;" maxlength="2">%</td>
+            </tr>
+            <tr>
+                <td class="fc">Net Salery</td>
+                <td colspan="3" class="fc">:: <input type="text" name="NS" readonly="true"></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center"><br>
+                    <input type="button" value="Home" style="width: 100px;" class="btn" onclick="act();">&nbsp;
+                    <input type="button" value="Calculate" style="width: 100px;" onclick="cal();" class="btn">&nbsp;
+                    <input type="button" value="Reset" style="width: 100px;" class="btn" onclick="reset();"></td>
+            </tr>
+            <tr>
+                <td colspan="4" style="font-family: 'Times New Roman', Times, serif"><marquee behavior="alternate" ><font size="5" color="yellow">Developed By Rohit Mehta</font></marquee></td>
+            </tr>
+        </table>
+    </form>
+    <script src="cal.js"></script>
+    </body>
+</html>

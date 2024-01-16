@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .variations {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .variation {
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+    }
+</style>
+
+</head>
+
+<body>
+  <h1>Name Game</h1>
+  <label for="nameInput">Enter your name:</label>
+  <input type="text" id="nameInput" placeholder="Your Name">
+  <button onclick="generateVariations()">Generate Variations</button>
+<!-- ... (Same HTML structure as before) -->
+<div id="variations" class="variations"></div>
+
+
+  <script>
+   function generateVariations() {
+    const name = document.getElementById('nameInput').value;
+
+    if (!name) {
+        alert('Please enter your name.');
+        return;
+    }
+
+    const variations = [];
+    for (let i = 0; i < name.length; i++) {
+        for (let j = 97; j <= 122; j++) { // ASCII codes for lowercase letters (a to z)
+            const char = String.fromCharCode(j);
+            if (char !== name[i]) {
+                const variation = name.substring(0, i) + char + name.substring(i + 1);
+                variations.push(variation);
+            }
+        }
+    }
+
+    const variationsDiv = document.getElementById('variations');
+    variationsDiv.innerHTML = '';
+
+    // Display variations horizontally with a maximum of 10 variations per row
+    for (let i = 0; i < Math.min(20, variations.length); i++) {
+        const variationElement = document.createElement('div');
+        variationElement.classList.add('variation');
+        variationElement.textContent = variations[i];
+        variationsDiv.appendChild(variationElement);
+
+        // Add line break after every 10 variations
+        if ((i + 1) % 10 === 0) {
+            const lineBreak = document.createElement('br');
+            variationsDiv.appendChild(lineBreak);
+        }
+    }
+}
+
+
+
+  </script>
+</body>
+
+</html>

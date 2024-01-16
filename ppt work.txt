@@ -1,0 +1,16 @@
+1 page = Internship regrding 
+  page = about self
+  page = indexing page
+3 page = About College
+4 page = Csf Cdac Authorized centre
+5 page = trainer details
+  all projects one by one
+min two page of a project and details about used tags
+1 marksheet
+2 student
+hostel
+bar bar shop
+super market
+employee
+static page
+

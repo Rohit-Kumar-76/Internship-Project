@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Login Here</title>
+        <link rel="stylesheet" href="home.css">
+        <style>
+            body{
+                background-image: url(dg-pro.jpg);
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+    </head>
+    <body bgcolor="skyblue" >
+        <script lang="javascript">
+          function val()
+
+          {
+		if(document.lform.userid.value=="" || document.lform.pass.value=="")
+			{
+                        	window.alert("DATA MISSING");
+			}
+    
+                 else if(document.lform.userid.value=="Amrit" && document.lform.pass.value==1234)
+                 {
+                	window.alert("Login Success Welcome Rohit");
+                	window.close();
+                	window.open("home.htm");
+                 }
+                 else{
+			
+			
+			    window.alert("UnAuthorized Access");
+		
+                   }
+          }
+        </script>
+        <br><br><br>
+        
+        <form name="lform">
+            
+        <table  width="500px" align="center"  style="margin-top: 160px;">
+            <tr>
+                <td colspan="2"><h1 align="center" style="color:#FA0931;"><u>Admin Access</u></h1></td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td width="80%" >
+                    <label for="userid" style="font-size: 30px;color: #FA0931;">UserName</label><br>
+                    <input type="text" name="userid" style="width: 70%;height:30px;font-size: 20px;">
+                </td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td>
+                    <label for="pass" style="font-size: 30px;color: #FA0931">Password</label><br>
+                    <input type="password" name="pass" style="width: 70%;height:30px;font-size: 20px;" >
+                </td>
+            </tr>
+            <td></td>
+            <td>
+                <input type="button" class="btn-log" onclick="window.close();" value="Exit" >&nbsp;
+                <input type="button" class="btn-log" value="Login" onclick="val();" >&nbsp;
+                <input type="button" class="btn-log" value="Reset" onclick="clr();" >&nbsp;
+            </td>
+        </table>
+    </form>
+<script src="reset.js"></script>
+    </body>
+</html>
